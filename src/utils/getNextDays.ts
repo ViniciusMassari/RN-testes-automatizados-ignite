@@ -1,7 +1,7 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
-export function getNextDays() {
-  const days = [];
+export function getNextDays(): Array<string> {
+  const days: Array<string> = [];
   const today = new Date();
 
   for (let i = 0; i < 5; i++) {
