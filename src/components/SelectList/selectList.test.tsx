@@ -21,6 +21,13 @@ describe('Component: SelectList', () => {
 
     expect(onPress).toHaveBeenCalledTimes(1);
   });
+  it('Should return empty selected list', () => {
+    render(<SelectList data={[]} onChange={() => {}} onPress={() => {}} />);
+
+    const options = screen.getByTestId('options');
+
+    expect(options.children).toHaveLength(0);
+  });
   it('OnPress event should be called', async () => {
     const data = [
       { id: '1', name: 'Campinas', latitude: 123, longitude: 456 },
