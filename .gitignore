@@ -17,3 +17,7 @@ web-build/
 .metro-health-check*
 
 .env
+
+__tests__/coverage
+
+coverage

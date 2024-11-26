@@ -9,7 +9,7 @@ export type DayProps = {
   weather: string;
   max: string;
   min: string;
-}
+};
 
 type Props = {
   data: DayProps;
@@ -20,19 +20,12 @@ export function Day({ data }: Props) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.day}>
-        {data.day}
-      </Text>
-
+      <Text style={styles.day}>{data.day}</Text>
       <Icon width={56} height={56} />
 
-      <Text style={styles.max}>
-        {data.max}
-      </Text>
+      <Text style={styles.max}>{data.max}</Text>
 
-      <Text style={styles.min}>
-        {data.min}
-      </Text>
+      <Text style={styles.min}>{data.min}</Text>
     </View>
   );
 }

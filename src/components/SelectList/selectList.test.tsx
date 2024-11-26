@@ -51,7 +51,7 @@ describe('Component: SelectList', () => {
       { id: '2', name: 'Campo grande', latitude: 123, longitude: 456 },
     ];
 
-    const expectedArgument = data[0];
+    const expectedArgument = data[1];
 
     const onPress = jest.fn();
 
