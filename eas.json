@@ -1,0 +1,22 @@
+{
+  "cli": {
+    "version": ">= 13.4.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "distribution": "internal"
+      },
+      "production": {},
+      "env": {
+        "EXPO_PUBLIC_WEATHER__APP_ID": "API_KEY"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_WEATHER__APP_ID": "API_KEY"
+      }
+    }
+  }
+}
